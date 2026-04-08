@@ -6,11 +6,10 @@ import img from "../assets/hero.svg";
 function HeroSection() {
   return (
     <div className="min-h-[70vh] flex flex-col md:flex-row md:justify-between items-center md:mx-32 mx-5 mt-10">
-      
       {/* Left Side */}
       <div className="md:w-2/4 text-left space-y-5">
         <h2 className="text-5xl font-semibold leading-tight text-start">
-          Knowledge with{" "}
+          Knowledge With{" "}
           <span className="text-brightGreen font-bold">eStudy</span>
         </h2>
         <p className="text-lightText text-xl text-start">
