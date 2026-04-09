@@ -67,22 +67,9 @@ npm install
 npm run dev
 ```
 
-5. Open in browser:
-```
-http://localhost:5173
-```
-
----
-
 ## 🎯 Purpose
 
 This project was built for learning and practicing frontend development using React and Tailwind CSS, focusing on creating responsive and visually appealing landing pages.
-
----
-
-## 📸 Preview
-
-> Add screenshots or demo link here
 
 ---
 
