@@ -5,6 +5,7 @@ import About from "../components/About";
 import Courses from "../components/Courses";
 import Reviews from "../components/Reviews";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -30,6 +31,8 @@ function Home() {
       <section id="contact">
         <Contact />
       </section>
+
+      <Footer />
     </>
   );
 }
