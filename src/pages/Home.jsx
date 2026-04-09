@@ -4,6 +4,7 @@ import HeroSection from "../components/HeroSection";
 import About from "../components/About";
 import Courses from "../components/Courses";
 import Reviews from "../components/Reviews";
+import Contact from "../components/Contact";
 
 function Home() {
   return (
@@ -24,6 +25,10 @@ function Home() {
 
       <section id="reviews">
         <Reviews />
+      </section>
+
+      <section id="contact">
+        <Contact />
       </section>
     </>
   );
