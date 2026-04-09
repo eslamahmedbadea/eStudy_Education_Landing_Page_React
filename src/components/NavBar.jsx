@@ -13,13 +13,12 @@ function NavBar() {
   return (
     // NavBar parent container
     <div>
-      <div className="flex flex-row justify-between p-5 md:px-32 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
-        
+      <div className="flex flex-row justify-between p-5 md:px-32 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)] fixed z-999 w-full">
         {/* Our logo container */}
         <div>
-          <Link to="/" className="font-semibold text-2xl p-1 cursor-pointer">
+          <span className="font-semibold text-2xl p-1 cursor-pointer">
             eStudy
-          </Link>
+          </span>
         </div>
 
         {/* NavBar elements */}
@@ -82,58 +81,56 @@ function NavBar() {
         </div>
       </div>
 
-      {/* NavBar elements show */}
+      {/* Mobile menu */}
       {menu && (
-        <div>
-          <div>
-            <nav className="flex flex-col gap-4 font-medium p-5 cursor-pointer md:hidden">
-              <Link
-                to="home"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="hover:text-brightGreen transition-all cursor-pointer"
-              >
-                Home
-              </Link>
-              <Link
-                to="about"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="hover:text-brightGreen transition-all cursor-pointer"
-              >
-                About
-              </Link>
-              <Link
-                to="courses"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="hover:text-brightGreen transition-all cursor-pointer"
-              >
-                Courses
-              </Link>
-              <Link
-                to="reviews"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="hover:text-brightGreen transition-all cursor-pointer"
-              >
-                Reviews
-              </Link>
-              <Link
-                to="contact"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="hover:text-brightGreen transition-all cursor-pointer"
-              >
-                Contact
-              </Link>
-            </nav>
-          </div>
+        <div className="fixed top-16 w-full bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)] z-998 md:hidden">
+          <nav className="flex flex-col gap-4 font-medium p-5 cursor-pointer">
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="hover:text-brightGreen transition-all cursor-pointer"
+            >
+              Home
+            </Link>
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="hover:text-brightGreen transition-all cursor-pointer"
+            >
+              About
+            </Link>
+            <Link
+              to="courses"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="hover:text-brightGreen transition-all cursor-pointer"
+            >
+              Courses
+            </Link>
+            <Link
+              to="reviews"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="hover:text-brightGreen transition-all cursor-pointer"
+            >
+              Reviews
+            </Link>
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="hover:text-brightGreen transition-all cursor-pointer"
+            >
+              Contact
+            </Link>
+          </nav>
         </div>
       )}
     </div>
