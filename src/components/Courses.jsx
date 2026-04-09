@@ -1,14 +1,13 @@
 // Importing
 import CoursesCard from "../layout/CoursesCard";
 import webImg from "../assets/web-dev.svg";
-import appImg from "../assets/app-dev.svg";
+import appImg from "../assets/App-dev.svg";
 import graphicImg from "../assets/graphic.svg";
 import digitalImg from "../assets/digital.svg";
 
 function Courses() {
   return (
     <div className="min-h-screen flex flex-col items-center md:px-32 px-5 my-10">
-      
       {/* Courses headling */}
       <h2 className="text-4xl font-semibold">
         Our <span className="text-brightGreen font-bold">Courses</span>
