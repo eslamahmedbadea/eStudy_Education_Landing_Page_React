@@ -6,6 +6,7 @@ function Contact() {
   return (
     // Main container
     <div className="min-h-screen flex flex-col items-center justify-center md:mx-32 mx-5 mt-10">
+
       {/* Section heading */}
       <h2 className="text-4xl font-semibold">
         Contact <span className="text-brightGreen font-bold">Us</span>
@@ -13,8 +14,10 @@ function Contact() {
 
       {/* Form and image wrapper */}
       <div className="flex flex-col md:flex-row justify-between w-full mt-10">
+
         {/* Contact form */}
         <form className="w-full md:w-2/5 space-y-5">
+        
           {/* Name field */}
           <div className="flex flex-col gap-1">
             <label className="font-medium" htmlFor="userName">
